@@ -4,10 +4,11 @@ public class switch1 {
     public static void main(String[] args) {
         System.out.println("hello");
 
-        Random random = new Random(5);
-        int randomnumber = random.nextInt(10);
+        Random random = new Random();
+        int randomnumber = random.nextInt(5,11);
 
         System.out.println(randomnumber);
+
 
         switch (randomnumber){
             case 10:
