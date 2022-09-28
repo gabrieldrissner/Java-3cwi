@@ -21,5 +21,6 @@ public class whileLoop1 {
             }
         }
         System.out.println(a);
+
     }
 }
