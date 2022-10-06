@@ -13,7 +13,7 @@ public class bankomat {
         System.out.println("4. Ende");
 
         boolean gameIsRunning = false;
-        while (gameIsRunning==false) {
+        while (gameIsRunning == false) {
 
             Scanner scanner = new Scanner(System.in);
             int selection = scanner.nextInt();
@@ -21,23 +21,21 @@ public class bankomat {
             if (selection == 1) {
                 System.out.println("Geben Sie den Betrag ein den Sie einzahlen möchten:");
                 int payin = scanner.nextInt();
-                balance= balance+payin;
+                balance = balance + payin;
                 System.out.println("Sie haben " + payin + " Euro eingezahlt.");
 
             } else if (selection == 2) {
                 System.out.println("Geben Sie den Betrag ein den Sie abheben möchten:");
                 int payoff = scanner.nextInt();
                 balance = balance - payoff;
-                System.out.println("Sie haben " +payoff +" Euro abgehoben.");
+                System.out.println("Sie haben " + payoff + " Euro abgehoben.");
             } else if (selection == 3) {
-                System.out.println("Ihr Kontostand beträgt " + balance +" Euro.");
+                System.out.println("Ihr Kontostand beträgt " + balance + " Euro.");
 
-            } else if(selection==4){
+            } else if (selection == 4) {
                 System.out.println("Ende");
-                gameIsRunning=true;
+                gameIsRunning = true;
             }
-
-
 
 
         }
