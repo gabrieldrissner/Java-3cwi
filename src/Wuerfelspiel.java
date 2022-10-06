@@ -35,8 +35,8 @@ public class Wuerfelspiel {
                     System.out.println("Untentschieden");
                 }
 
-            if (i==6){
-                isFinished==true;
+            if (i==5){
+                isFinished=true;
             }
                 }
             }
