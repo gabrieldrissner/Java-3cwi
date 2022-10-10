@@ -21,31 +21,29 @@ public class Wuerfelspiel {
                 int randomComputer = random.nextInt(1, 7);
                 int randomPlayer = random.nextInt(1, 7);
 
-                if (randomPlayer>randomComputer){
-                    amountOfPlayersWin=amountOfPlayersWin+1;
+                if (randomPlayer > randomComputer) {
+                    amountOfPlayersWin = amountOfPlayersWin + 1;
                     System.out.println("Sieg für den Spieler " + randomPlayer);
 
-                } else if (randomComputer>randomPlayer) {
-                    amountOfComputerWin=amountOfComputerWin+1;
+                } else if (randomComputer > randomPlayer) {
+                    amountOfComputerWin = amountOfComputerWin + 1;
                     System.out.println("Sieg für den Computer " + randomComputer);
 
-                }
-                else {
-                    amountOfDraws=amountOfDraws+1;
+                } else {
+                    amountOfDraws = amountOfDraws + 1;
                     System.out.println("Untentschieden");
                 }
 
-            if (i==5){
-                isFinished=true;
-            }
+                if (i == 5) {
+                    isFinished = true;
                 }
             }
-        if(amountOfPlayersWin>amountOfComputerWin){
-            System.out.println("Mit " + amountOfPlayersWin + " Siegen gewinnt der Player gegen den Computer " + amountOfComputerWin);
-        } else if (amountOfComputerWin>amountOfPlayersWin) {
-            System.out.println("Mit " + amountOfComputerWin + " Siegen gewinnt der Computer gegen den Player " + amountOfPlayersWin);
         }
-        else {
+        if (amountOfPlayersWin > amountOfComputerWin) {
+            System.out.println("Mit " + amountOfPlayersWin + " Siegen gewinnt der Player gegen den Computer " + amountOfComputerWin);
+        } else if (amountOfComputerWin > amountOfPlayersWin) {
+            System.out.println("Mit " + amountOfComputerWin + " Siegen gewinnt der Computer gegen den Player " + amountOfPlayersWin);
+        } else {
             System.out.println("Das Spiel endet Unentschieden ");
         }
     }
