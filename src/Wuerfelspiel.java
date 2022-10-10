@@ -22,16 +22,16 @@ public class Wuerfelspiel {
                 int randomPlayer = random.nextInt(1, 7);
 
                 if (randomPlayer>randomComputer){
-                    amountOfPlayersWin=+1;
+                    amountOfPlayersWin=amountOfPlayersWin+1;
                     System.out.println("Sieg für den Spieler " + randomPlayer);
 
                 } else if (randomComputer>randomPlayer) {
-                    amountOfComputerWin=+1;
+                    amountOfComputerWin=amountOfComputerWin+1;
                     System.out.println("Sieg für den Computer " + randomComputer);
 
                 }
                 else {
-                    amountOfDraws=+1;
+                    amountOfDraws=amountOfDraws+1;
                     System.out.println("Untentschieden");
                 }
 
@@ -46,7 +46,7 @@ public class Wuerfelspiel {
             System.out.println("Mit " + amountOfComputerWin + " Siegen gewinnt der Computer gegen den Player " + amountOfPlayersWin);
         }
         else {
-            System.out.println("Das Spiel endet Unentschieden " + amountOfDraws);
+            System.out.println("Das Spiel endet Unentschieden ");
         }
     }
 }
