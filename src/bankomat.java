@@ -13,7 +13,7 @@ public class bankomat {
         System.out.println("4. Ende");
 
         boolean gameIsRunning = false;
-        while (gameIsRunning == false) {
+        while (!gameIsRunning) {
 
             Scanner scanner = new Scanner(System.in);
             int selection = scanner.nextInt();
