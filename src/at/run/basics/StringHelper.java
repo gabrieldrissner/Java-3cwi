@@ -8,10 +8,7 @@ public class StringHelper {
       int result = countletters("Hans achtet auf mich", 'a');
         System.out.println(result);
     }
-    public static boolean isPalindrome(String text) {
-        char[] textArray = text.toCharArray();
-        return false;
-    }
+
 
     public static int countletters(String text, char search) {
 
