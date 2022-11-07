@@ -23,7 +23,7 @@ public class TicTacTo {
                 String[] values = input.split(",");
                 int x = Integer.parseInt(values[0]);
                 int y = Integer.parseInt(values[1]);
-             if (field[x][y] =  '\000000'){
+
 
              }
 
@@ -33,5 +33,5 @@ public class TicTacTo {
     }
 
 
-}
+
 

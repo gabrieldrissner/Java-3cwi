@@ -1,8 +1,6 @@
 package at.run.basics;
 
-import javax.swing.*;
-
-public class StringHelper {
+public class StringHelper_countletters {
 
     public static void main(String[] args) {
       int result = countletters("Hans achtet auf mich", 'a');
