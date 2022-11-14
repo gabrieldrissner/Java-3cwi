@@ -9,6 +9,6 @@ public class MainStringHelper {
 
         System.out.println(StringHelper.revertString("Gabriel"));
 
-
+        System.out.println(StringHelper.printAmountOfLetters("Anna",'a'));
     }
 }

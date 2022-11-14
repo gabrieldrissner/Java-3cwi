@@ -57,4 +57,22 @@ public class StringHelper {
         return String.valueOf(arr);
     }
 
+    public static int printAmountOfLetters(String text, char search1) {
+
+        //Anna
+        char[] textArray1 = text.toCharArray();
+
+        int lettersCount = 0;
+
+        for (int i = 0; i < textArray1.length; i++) {
+            if (search1 == textArray1[i]) {
+                lettersCount = lettersCount + 1;
+            }
+        }
+
+
+        return lettersCount;
+
+    }
 }
+

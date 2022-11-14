@@ -1,37 +1,38 @@
 import java.util.Scanner;
 
 public class TicTacTo {
+
+
     public static void main(String[] args) {
-        System.out.println("Drücken Sie 1 um das Spiel zu starten");
+        int[][] field = new int[3][3];
         Scanner scanner = new Scanner(System.in);
-        int selection = scanner.nextInt();
-
-        if (selection == 1) {
-            System.out.println("Das Spiel beginnt");
-        } else {
-            System.out.println("Error");
-        }
-
-        char[][] field = new char[3][3];
-        int actualPlayer = 0;
-
+        boolean gameIsRunning = true;
+        printField(field);
         while (true) {
-            boolean isValid = false;
-            while (isValid) {
-                System.out.println("Triff deine Wahl Spieler " + actualPlayer);
-                String input = String.valueOf(scanner.nextInt());
-                String[] values = input.split(",");
-                int x = Integer.parseInt(values[0]);
-                int y = Integer.parseInt(values[1]);
-
-
-             }
-
+            String inputOfUser = scanner.next();
+            String[] arr = inputOfUser.split(",");
+            System.out.println(arr);
+            int x = Integer.valueOf(arr[0]);
+            int y = Integer.valueOf(arr[1]);
+            field[x][y] = 1;
+            printField(field);
+            if (gameIsRunning) {
+                gameIsRunning = false;
+            } else {
+                gameIsRunning = true;
             }
+            System.out.println(gameIsRunning);
         }
-
     }
 
-
+    public static void printField(int[][] playGround) {
+        for (int row = 0; row < playGround.length; row++) {
+            for (int col = 0; col < playGround.length; col++) {
+                System.out.print(playGround[row][col] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
 
 
