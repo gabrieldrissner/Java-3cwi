@@ -8,13 +8,23 @@ public class TicTacTo {
         Scanner scanner = new Scanner(System.in);
         boolean gameIsRunning = true;
         printField(field);
+        boolean player = true;
+
         while (true) {
+            System.out.println("Geben sie ihr Feld ein:");
             String inputOfUser = scanner.next();
             String[] arr = inputOfUser.split(",");
             System.out.println(arr);
             int x = Integer.valueOf(arr[0]);
             int y = Integer.valueOf(arr[1]);
             field[x][y] = 1;
+
+            if (player == true){
+                player = false;
+            }else {
+                player = true;
+            }
+
             printField(field);
             if (gameIsRunning) {
                 gameIsRunning = false;
