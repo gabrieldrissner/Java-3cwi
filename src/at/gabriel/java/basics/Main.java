@@ -1,3 +1,5 @@
+package at.gabriel.java.basics;
+
 public class Main {
     public static void main(String[] args) {
 

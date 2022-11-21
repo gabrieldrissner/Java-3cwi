@@ -1,3 +1,5 @@
+package at.gabriel.java.basics;
+
 public class Array {
     private static final int KEY = 2;
 

@@ -1,3 +1,5 @@
+package at.gabriel.java.basics;
+
 import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;

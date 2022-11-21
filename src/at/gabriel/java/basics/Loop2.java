@@ -1,3 +1,5 @@
+package at.gabriel.java.basics;
+
 public class Loop2 {
     public static void main(String[] args) {
         System.out.println("test");

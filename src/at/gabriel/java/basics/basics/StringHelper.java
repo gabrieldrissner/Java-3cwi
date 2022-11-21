@@ -1,4 +1,4 @@
-package at.run.basics;
+package at.gabriel.java.basics.basics;
 
 public class StringHelper {
 

@@ -1,3 +1,5 @@
+package at.gabriel.java.basics;
+
 import java.util.Random;
 
 public class ifclauses1 {
