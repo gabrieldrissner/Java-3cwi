@@ -10,6 +10,17 @@ public class Car {
 
     public int speed;
 
+    public Car(String serialnumber,
+               String colour,
+               int fueldConsumption,
+               int fuelAmount,
+               int speed) {
+        this.serialNumber = serialNumber;
+        this.colour = colour;
+        this.fueldConsumption = fueldConsumption;
+        this.fuelAmount = fuelAmount;
+        this.speed = speed;
+    }
 
     public void drive() {
         this.speed = 100;
@@ -34,6 +45,7 @@ public class Car {
             System.out.println("Not enough fuel to go to Superboost");
 
         }
+
     }
 }
 
