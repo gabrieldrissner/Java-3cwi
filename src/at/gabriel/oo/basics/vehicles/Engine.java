@@ -2,13 +2,38 @@ package at.gabriel.oo.basics.vehicles;
 
 public class Engine {
 
-    private enum TYPE{DIESEL,GAS}
+    public enum TYPE {DIESEL, GAS}
+
     private int horsePower;
-    private String type; //Diesel oder Benzin
+    private TYPE type; //Diesel oder Benzin
 
-    //
+    //amount should be between 0 and 100
 
-    public void drive(int amount){
+
+    public Engine(int horsePower, TYPE type){
+        this.horsePower = horsePower;
+        this.type=type;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public TYPE getType() {
+        return type;
+    }
+
+    public void drive(int amount) {
+        System.out.println("The motor is running with " + amount);
+
+
+
+
+
+
 
     }
+
+
 }
+

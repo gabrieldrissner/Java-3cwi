@@ -3,6 +3,7 @@ package at.gabriel.oo.basics.vehicles;
 import javax.swing.*;
 
 public class Car {
+    private Engine engine;
     private String serialNumber;
     private String colour;
     private int fueldConsumption;
@@ -10,11 +11,16 @@ public class Car {
 
     private int speed;
 
-    public Car(String serialnumber,
-               String colour,
-               int fueldConsumption,
-               int tank,
-               int speed) {
+    private int honkCounter;
+
+    public Car(
+            Engine engine,
+            String serialnumber,
+            String colour,
+            int fueldConsumption,
+            int tank,
+            int speed) {
+        this.engine = engine;
         this.serialNumber = serialNumber;
         this.colour = colour;
         this.fueldConsumption = fueldConsumption;
@@ -49,11 +55,12 @@ public class Car {
     }
 
     public void honk() {
-        int amountOfRepetitions = 2;
-        System.out.println(amountOfRepetitions + " * " + " Tuuut");
+        this.honkCounter=1;
+        System.out.println("Das Auto hat "+this.getEngine().getHorsePower() + " Pferdestärken" + " Es hupt " + this.honkCounter + " *" + " Tuuut");
+        this.honkCounter++;
     }
 
-    public void getRemainingRange(){
+    public void getRemainingRange() {
         int residualTank = tank - fueldConsumption;
         int range = residualTank * 5;
         System.out.println("Das Auto kann noch " + range + " km fahren.");
@@ -89,6 +96,15 @@ public class Car {
 
     public int getFueldConsumption() {
         return fueldConsumption;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
     public int getTank() {
