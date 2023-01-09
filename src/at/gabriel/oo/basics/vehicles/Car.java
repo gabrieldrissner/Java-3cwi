@@ -1,6 +1,8 @@
 package at.gabriel.oo.basics.vehicles;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Car {
     private Engine engine;
@@ -12,6 +14,10 @@ public class Car {
     private int speed;
 
     private int honkCounter;
+
+    private List<RearMirror> mirrors;
+
+    private List<tyre> tire;
 
     public Car(
             Engine engine,
@@ -26,6 +32,7 @@ public class Car {
         this.fueldConsumption = fueldConsumption;
         this.setTank(tank);
         this.speed = speed;
+        this.mirrors = new ArrayList<>();
     }
 
     public void drive() {
@@ -55,10 +62,29 @@ public class Car {
     }
 
     public void honk() {
-        this.honkCounter=1;
-        System.out.println("Das Auto hat "+this.getEngine().getHorsePower() + " Pferdestärken" + " Es hupt " + this.honkCounter + " *" + " Tuuut");
+        this.honkCounter = 1;
+        System.out.println("Das Auto hat " + this.getEngine().getHorsePower() + " Pferdestärken" + " Es hupt " + this.honkCounter + " *" + " Tuuut");
         this.honkCounter++;
     }
+
+    public void addMirror(RearMirror rearMirror) {
+        this.mirrors.add(rearMirror);
+    }
+
+
+    public List<tyre> getTire() {
+        return tire;
+    }
+
+    public void addTyre(tyre tire){
+        this.tire.add(tire);
+
+
+    }
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
 
     public void getRemainingRange() {
         int residualTank = tank - fueldConsumption;

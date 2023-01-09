@@ -10,9 +10,9 @@ public class Engine {
     //amount should be between 0 and 100
 
 
-    public Engine(int horsePower, TYPE type){
+    public Engine(int horsePower, TYPE type) {
         this.horsePower = horsePower;
-        this.type=type;
+        this.type = type;
     }
 
     public int getHorsePower() {
@@ -23,17 +23,10 @@ public class Engine {
         return type;
     }
 
-    public void drive(int amount) {
-        System.out.println("The motor is running with " + amount);
-
-
-
-
-
-
-
-    }
-
 
 }
+
+
+
+
 
