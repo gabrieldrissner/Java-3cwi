@@ -33,6 +33,7 @@ public class Car {
         this.setTank(tank);
         this.speed = speed;
         this.mirrors = new ArrayList<>();
+        this.tire = new ArrayList<>();
     }
 
     public void drive() {
@@ -76,11 +77,12 @@ public class Car {
         return tire;
     }
 
-    public void addTyre(tyre tire){
+    public void addTyre(tyre tire) {
         this.tire.add(tire);
 
 
     }
+
     public List<RearMirror> getMirrors() {
         return mirrors;
     }

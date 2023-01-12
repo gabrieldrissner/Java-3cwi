@@ -3,6 +3,7 @@ package at.gabriel.oo.basics;
 import at.gabriel.oo.basics.vehicles.Car;
 import at.gabriel.oo.basics.vehicles.Engine;
 import at.gabriel.oo.basics.vehicles.RearMirror;
+import at.gabriel.oo.basics.vehicles.tyre;
 
 public class MainCar {
     public static void main(String[] args) {
@@ -28,6 +29,17 @@ public class MainCar {
         System.out.println("Position Spiegel 1: " + car1.getMirrors().get(0).getPosition());
 
 
+        tyre t1 = new tyre(100, tyre.TYPE.Winterreifen);
+        tyre t2 = new tyre(100, tyre.TYPE.Sommerreifen);
+        tyre t3 = new tyre(100, tyre.TYPE.Winterreifen);
+        tyre t4 = new tyre(100, tyre.TYPE.Winterreifen);
+
+        car1.addTyre(t1);
+        car1.addTyre(t2);
+        car1.addTyre(t3);
+        car1.addTyre(t4);
+
+        System.out.println("Die Reifen: haben die Größe " + car1.getTire().get(0).getSize());
     }
 
 

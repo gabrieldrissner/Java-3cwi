@@ -1,10 +1,14 @@
 package at.gabriel.oo.basics.vehicles;
 
 public class tyre {
-    private int size;
-    private int type; //Winterreifen, Sommerreifen
 
-    public tyre(int size, int type) {
+    public enum TYPE {Winterreifen, Sommerreifen}
+
+    private int size;
+
+    private TYPE type;
+
+    public tyre(int size, TYPE type) {
         this.size = size;
         this.type = type;
     }
@@ -17,11 +21,11 @@ public class tyre {
         this.size = size;
     }
 
-    public int getType() {
+    public TYPE getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(TYPE type) {
         this.type = type;
     }
 }
