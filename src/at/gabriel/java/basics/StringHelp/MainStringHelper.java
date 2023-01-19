@@ -1,4 +1,4 @@
-package at.gabriel.java.basics.basics;
+package at.gabriel.java.basics.StringHelp;
 
 public class MainStringHelper {
     public static void main(String[] args) {

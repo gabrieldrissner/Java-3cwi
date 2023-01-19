@@ -1,4 +1,4 @@
-package at.gabriel.java.basics;
+package at.gabriel.java.basics.basics;
 
 import java.util.Random;
 

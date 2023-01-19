@@ -1,4 +1,4 @@
-package at.gabriel.java.basics;
+package at.gabriel.java.basics.basics;
 
 public class Loop1 {
     public static void main(String[] args) {

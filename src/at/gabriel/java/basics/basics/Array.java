@@ -1,4 +1,4 @@
-package at.gabriel.java.basics;
+package at.gabriel.java.basics.basics;
 
 public class Array {
     private static final int KEY = 2;
