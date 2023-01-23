@@ -20,9 +20,17 @@ public class Remote {
 
     }
 
-    public double turnOn() {
-        double batteryPack1 = this.battery1.getState() * 0.95;
-        double batteryPack2 = this.battery2.getState() * 0.95;
-       return batteryPack1;
+    public String turnOn() {
+        String on = "Der Verbraucher ist angeschlossen";
+        double newStateBattery1 = this.battery1.getState() * 0.95;
+        double newStateBattery2 = this.battery2.getState() * 0.95;
+        System.out.println("Neuer Akkustand Batterie 1: " + newStateBattery1);
+        System.out.println("Neuer Akkustand Batterie 2: " + newStateBattery2);
+        return on;
+    }
+
+    public String turnOff(){
+        String off = "Kein Verbraucher angeschlossen";
+        return off;
     }
 }

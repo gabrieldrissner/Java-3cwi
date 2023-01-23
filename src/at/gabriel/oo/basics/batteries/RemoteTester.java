@@ -16,7 +16,10 @@ public class RemoteTester {
 
         System.out.println("Akkustand " + remote1.getStatus() + " Prozent");
 
-        System.out.println(battery1.getState());
-        System.out.println(battery2.getState());
+        System.out.println("Akkustand Batterie 1: " + battery1.getState());
+        System.out.println("Akkustand Batterie 2: " + battery2.getState());
+
+        System.out.println(remote1.turnOn());
+        System.out.println(remote1.turnOff());
     }
 }
