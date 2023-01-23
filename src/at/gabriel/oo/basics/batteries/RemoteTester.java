@@ -1,14 +1,8 @@
 package at.gabriel.oo.basics.batteries;
 
 
-import at.gabriel.oo.basics.vehicles.Engine;
-
 public class RemoteTester {
     public static void main(String[] args) {
-
-
-
-
         Battery battery1 = new Battery(50);
         Battery battery2 = new Battery(80);
 
@@ -20,6 +14,7 @@ public class RemoteTester {
         System.out.println("Akkustand Batterie 2: " + battery2.getState());
 
         System.out.println(remote1.turnOn());
+        System.out.println("Neuer Akkustand " + remote1.getStatus() + " Prozent");
         System.out.println(remote1.turnOff());
     }
 }

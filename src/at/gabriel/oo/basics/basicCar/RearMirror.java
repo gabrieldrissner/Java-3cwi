@@ -1,4 +1,4 @@
-package at.gabriel.oo.basics.vehicles;
+package at.gabriel.oo.basics.basicCar;
 
 public class RearMirror {
     private int size;

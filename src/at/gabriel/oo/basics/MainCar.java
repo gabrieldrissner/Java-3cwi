@@ -1,9 +1,9 @@
 package at.gabriel.oo.basics;
 
-import at.gabriel.oo.basics.vehicles.Car;
-import at.gabriel.oo.basics.vehicles.Engine;
-import at.gabriel.oo.basics.vehicles.RearMirror;
-import at.gabriel.oo.basics.vehicles.tyre;
+import at.gabriel.oo.basics.basicCar.Car;
+import at.gabriel.oo.basics.basicCar.Engine;
+import at.gabriel.oo.basics.basicCar.RearMirror;
+import at.gabriel.oo.basics.basicCar.tyre;
 
 public class MainCar {
     public static void main(String[] args) {

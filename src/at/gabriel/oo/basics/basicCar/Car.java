@@ -1,6 +1,5 @@
-package at.gabriel.oo.basics.vehicles;
+package at.gabriel.oo.basics.basicCar;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
