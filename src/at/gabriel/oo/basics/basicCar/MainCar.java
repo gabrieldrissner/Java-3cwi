@@ -1,4 +1,4 @@
-package at.gabriel.oo.basics;
+package at.gabriel.oo.basics.basicCar;
 
 import at.gabriel.oo.basics.basicCar.Car;
 import at.gabriel.oo.basics.basicCar.Engine;
