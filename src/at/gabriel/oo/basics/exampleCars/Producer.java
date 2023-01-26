@@ -1,15 +1,17 @@
 package at.gabriel.oo.basics.exampleCars;
 
-public class NewProducer {
+public class Producer {
     private String producername;
-    private String Herkunftsland;
+    private String origin;
     private double rabatt;
 
-    public NewProducer(String producername, String herkunftsland, double rabatt) {
+
+    public Producer(String producername, String origin, double rabatt) {
         this.producername = producername;
-        Herkunftsland = herkunftsland;
+        origin = origin;
         this.rabatt = rabatt;
     }
+
 
     public String getProducername() {
         return producername;
@@ -19,12 +21,12 @@ public class NewProducer {
         this.producername = producername;
     }
 
-    public String getHerkunftsland() {
-        return Herkunftsland;
+    public String getOrigin() {
+        return origin;
     }
 
-    public void setHerkunftsland(String herkunftsland) {
-        Herkunftsland = herkunftsland;
+    public void setOrigin(String origin) {
+        this.origin = origin;
     }
 
     public double getRabatt() {
