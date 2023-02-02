@@ -1,10 +1,8 @@
 package at.gabriel.java.basics.basics;
 
-import java.sql.SQLOutput;
-import java.util.Random;
 import java.util.Scanner;
 
-public class bankomat {
+public class Bankomat {
     public static void main(String[] args) {
         int balance = 0;
 

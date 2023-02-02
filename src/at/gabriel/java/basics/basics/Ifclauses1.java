@@ -2,7 +2,7 @@ package at.gabriel.java.basics.basics;
 
 import java.util.Random;
 
-public class ifclauses1 {
+public class Ifclauses1 {
     public static void main(String[] args) {
         System.out.println("if");
 
