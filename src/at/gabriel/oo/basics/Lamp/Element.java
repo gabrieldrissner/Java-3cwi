@@ -1,18 +1,26 @@
 package at.gabriel.oo.basics.Lamp;
 
-public class Elements {
-        private String name;
-        private String color;
-        private double powerConsumption;
-        public enum TYPE {ON, OFF}
+public class Element {
+    private String name;
+    private String color;
+    private double powerConsumption;
 
-    private Elements.TYPE type; //On or OFF
+    private boolean state = false;
 
-    public Elements(String name, String color, double powerConsumption, TYPE type) {
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
+
+    public Element(String name, String color, double powerConsumption, boolean state) {
         this.name = name;
         this.color = color;
         this.powerConsumption = powerConsumption;
-        this.type = type;
+        this.state = state;
     }
 
     public String getName() {
@@ -39,12 +47,5 @@ public class Elements {
         this.powerConsumption = powerConsumption;
     }
 
-    public TYPE getType() {
-        return type;
-    }
-
-    public void setType(TYPE type) {
-        this.type = type;
-    }
 }
 
