@@ -1,34 +1,24 @@
 package at.gabriel.oo.basics.Lamp;
 
 public class Element {
-    private String name;
     private String color;
     private double powerConsumption;
 
-    private boolean state = false;
+    private boolean isOn = false;
 
 
-    public boolean isState() {
-        return state;
+    public boolean isOn() {
+        return isOn;
     }
 
-    public void setState(boolean state) {
-        this.state = state;
+    public void setState(boolean isOn) {
+        this.isOn = isOn;
     }
 
-    public Element(String name, String color, double powerConsumption, boolean state) {
-        this.name = name;
+    public Element(String color, double powerConsumption, boolean isOn) {
         this.color = color;
         this.powerConsumption = powerConsumption;
-        this.state = state;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        this.isOn = isOn;
     }
 
     public String getColor() {
@@ -47,5 +37,8 @@ public class Element {
         this.powerConsumption = powerConsumption;
     }
 
+    public void setOn(boolean on) {
+        isOn = on;
+    }
 }
 
