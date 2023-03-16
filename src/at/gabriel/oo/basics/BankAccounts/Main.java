@@ -5,6 +5,7 @@ public class Main {
 
         CheckingsAccount ca = new CheckingsAccount(3000);
         SavingsAccount sa = new SavingsAccount();
+        CreditAccount cra = new CreditAccount(4000);
 
         System.out.println(ca.getBalance());
         ca.deposit(5000);
@@ -15,6 +16,9 @@ public class Main {
         sa.deposit(4000);
         sa.withdraw(5000);
         System.out.println(sa.getBalance());
+
+        System.out.println(cra.getBalance());
+
 
     }
 }
