@@ -5,14 +5,13 @@ public class Phone {
     private Sim sim;
     private Camera camera;
     private SDcard sdCard;
-    private PhoneFile phoneFile;
 
-    public Phone(String color, Sim sim, Camera camera, SDcard sdCard, PhoneFile phoneFile) {
+    public Phone(String color, Sim sim, Camera camera,SDcard sdCard){
         this.color = color;
         this.sim = sim;
         this.camera = camera;
         this.sdCard = sdCard;
-        this.phoneFile = phoneFile;
+
     }
 
     public String getColor() {
@@ -31,7 +30,6 @@ public class Phone {
         return sdCard;
     }
 
-    public PhoneFile getPhoneFile() {
-        return phoneFile;
+  //public PhoneFile getPhoneFile() {
+   //   return phoneFile;
     }
-}
