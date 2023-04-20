@@ -13,6 +13,9 @@ public class PhoneFile {
         this.name = name;
     }
 
+    public String getInfo(){
+        return this.extension + ":" + this.name + ":" + this.size;
+    }
 
     public String getExtension() {
         return extension;

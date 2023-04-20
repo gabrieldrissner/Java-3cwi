@@ -5,23 +5,36 @@ import java.util.List;
 
 public class Sim {
     private int id;
-    private List<PhoneNumber> numbers;
+    private String number;
 
     public Sim(int id) {
         this.id = id;
-        this.numbers = new ArrayList<>();
+        this.number = number;
 
     }
 
-    public void addNumber(PhoneNumber number){
-        numbers.add(number);
+
+    public void doCall(String number) {
+        System.out.println("Calling " + number);
     }
 
-    public void printNumbers(){
-        for (PhoneNumber number: this.numbers) {
-            System.out.println("num:" + number.getNumber() + " name:" + number.getName());
-        }
+    public int getId() {
+        return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
 }
+
+
+
+
