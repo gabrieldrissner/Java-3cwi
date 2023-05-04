@@ -11,7 +11,10 @@ public class Main {
 
         camera.makePicture();
         camera.makePicture();
+        camera.setPictureSize(File.FILE_SIZE.klein);
         camera.makePicture();
         camera.getsDcard().printFiles();
+
+
     }
 }

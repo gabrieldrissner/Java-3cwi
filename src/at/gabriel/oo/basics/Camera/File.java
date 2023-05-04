@@ -2,16 +2,18 @@ package at.gabriel.oo.basics.Camera;
 
 public class File {
     private String name;
+    private String extension;
 
+    public enum FILE_SIZE {klein, mittel, groß}
 
-    public enum TYPE {klein, mittel, groß}
+    private at.gabriel.oo.basics.Camera.File.FILE_SIZE type;
 
-    private at.gabriel.oo.basics.Camera.File.TYPE type;
-
-    public File(String extension, TYPE type) {
+    public File(String name, String extension, FILE_SIZE type) {
         this.name = name;
         this.type = type;
+        this.extension=extension;
     }
+
 
     public File(String name) {
         this.name = name;
@@ -22,7 +24,7 @@ public class File {
     }
 
 
-    public TYPE getType() {
+    public FILE_SIZE getType() {
         return type;
     }
 

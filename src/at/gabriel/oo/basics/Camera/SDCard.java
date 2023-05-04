@@ -12,13 +12,16 @@ public class SDCard {
         this.files = new ArrayList<>();
     }
 
-    public void addFile(File file){
+    public void addFile(File file) {
         this.files.add(file);
     }
 
-    public void printFiles(){
-        for (File file: this.files) {
-            System.out.println(file.getName());
+
+
+    public void printFiles() {
+        for (File file : this.files) {
+            System.out.println(file.getName() + " size:" + file.getType());
         }
+
     }
 }
